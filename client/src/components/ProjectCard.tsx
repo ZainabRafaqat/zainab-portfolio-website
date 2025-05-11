@@ -47,42 +47,60 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <motion.div
       variants={cardVariants}
-      className="group bg-white dark:bg-gray-900 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-800/10 transition-all duration-300 overflow-hidden"
+      className="group bg-white dark:bg-gray-900 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-800/10 transition-all duration-300 overflow-hidden hover-scale-slight dark:hover:neon-box-glow-primary"
     >
-      <div className="overflow-hidden">
+      <div className="overflow-hidden relative">
+        {/* Project image with enhanced hover effect */}
         <img
           src={project.image}
           alt={`${project.title} Project`}
-          className="w-full h-48 object-cover object-center transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-48 object-cover object-center transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110"
         />
+        
+        {/* Overlay that appears on hover */}
+        <div className="absolute inset-0 bg-primary/0 dark:bg-primary/0 group-hover:bg-primary/10 dark:group-hover:bg-primary/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+          <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm px-4 py-2 rounded-lg font-medium text-primary dark:text-primary dark:neon-glow-primary">
+              View Details
+            </div>
+          </div>
+        </div>
       </div>
+      
       <div className="p-6">
-        <h3 className="font-heading font-bold text-xl text-gray-900 dark:text-white mb-2">
+        {/* Project title with code bracket effect on hover */}
+        <h3 className="font-space-grotesk font-bold text-xl text-gray-900 dark:text-white mb-2 group-hover:code-bracket-left group-hover:code-bracket-right dark:group-hover:neon-glow-primary transition-all duration-300">
           {project.title}
         </h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">
+        
+        {/* Project description */}
+        <p className="font-inter text-gray-600 dark:text-gray-400 mb-4">
           {project.description}
         </p>
+        
+        {/* Technology tags with enhanced styling */}
         <div className="flex flex-wrap gap-2 mb-6">
           {project.tags.map((tag, index) => (
             <span 
               key={index} 
-              className={`px-3 py-1 ${getTagColorClasses(project.tagColors[index])} text-xs font-medium rounded-full`}
+              className={`px-3 py-1 ${getTagColorClasses(project.tagColors[index])} text-xs font-medium rounded-full transition-all duration-300 hover:scale-105 hover:shadow-sm`}
             >
               {tag}
             </span>
           ))}
         </div>
+        
+        {/* Action buttons with neon effects in dark mode */}
         <div className="flex justify-between">
           <a 
             href={project.demoUrl} 
-            className="text-primary dark:text-primary font-medium hover:text-primary/80 dark:hover:text-primary/80 transition-colors"
+            className="text-primary dark:text-primary font-medium hover:text-primary/80 dark:hover:text-primary/80 transition-all duration-300 hover:translate-x-1 dark:hover:neon-glow-primary"
           >
-            View Project
+            View Project →
           </a>
           <a 
             href={project.githubUrl} 
-            className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+            className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-300 hover:scale-110"
             aria-label={`GitHub repository for ${project.title}`}
           >
             <Github className="h-5 w-5" />
