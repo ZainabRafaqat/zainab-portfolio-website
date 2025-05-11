@@ -34,10 +34,10 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
           <div className="container mx-auto px-4 py-3 space-y-1">
             <Link 
               href="/"
-              className={`block py-2 px-4 font-medium rounded ${
+              className={`block py-2 px-4 font-medium rounded transition-all duration-300 hover-scale-slight ${
                 isActive("/")
-                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
-                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary dark:neon-glow-primary"
+                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:neon-box-glow-primary"
               }`}
               onClick={onClose}
             >
@@ -45,10 +45,10 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             </Link>
             <Link 
               href="/projects"
-              className={`block py-2 px-4 font-medium rounded ${
+              className={`block py-2 px-4 font-medium rounded transition-all duration-300 hover-scale-slight ${
                 isActive("/projects")
-                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
-                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary dark:neon-glow-primary"
+                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:neon-box-glow-primary"
               }`}
               onClick={onClose}
             >
@@ -56,10 +56,10 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             </Link>
             <Link 
               href="/experience"
-              className={`block py-2 px-4 font-medium rounded ${
+              className={`block py-2 px-4 font-medium rounded transition-all duration-300 hover-scale-slight ${
                 isActive("/experience")
-                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
-                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary dark:neon-glow-primary"
+                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:neon-box-glow-primary"
               }`}
               onClick={onClose}
             >
@@ -67,10 +67,10 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             </Link>
             <Link 
               href="/blog"
-              className={`block py-2 px-4 font-medium rounded ${
+              className={`block py-2 px-4 font-medium rounded transition-all duration-300 hover-scale-slight ${
                 isActive("/blog")
-                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
-                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary dark:neon-glow-primary"
+                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:neon-box-glow-primary"
               }`}
               onClick={onClose}
             >
@@ -78,10 +78,10 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             </Link>
             <Link 
               href="/contact"
-              className={`block py-2 px-4 font-medium rounded ${
+              className={`block py-2 px-4 font-medium rounded transition-all duration-300 hover-scale-slight ${
                 isActive("/contact")
-                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
-                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary dark:neon-glow-primary"
+                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:neon-box-glow-primary"
               }`}
               onClick={onClose}
             >
