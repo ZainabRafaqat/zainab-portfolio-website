@@ -167,7 +167,7 @@ const Experience = () => {
                         {item.type === "work" ? (
                           <BriefcaseIcon className="h-6 w-6 text-primary" />
                         ) : (
-                          <AcademicCapIcon className="h-6 w-6 text-primary" />
+                          <GraduationCapIcon className="h-6 w-6 text-primary" />
                         )}
                       </div>
                       <div>
