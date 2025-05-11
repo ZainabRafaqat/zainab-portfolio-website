@@ -32,53 +32,49 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
           className="md:hidden border-t border-gray-200 dark:border-gray-800 overflow-hidden"
         >
           <div className="container mx-auto px-4 py-3 space-y-1">
-            <Link href="/">
-              <a
-                className={`block py-2 px-4 font-medium rounded ${
-                  isActive("/")
-                    ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
-                    : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
-                }`}
-                onClick={onClose}
-              >
-                Home
-              </a>
+            <Link 
+              href="/"
+              className={`block py-2 px-4 font-medium rounded ${
+                isActive("/")
+                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
+                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+              }`}
+              onClick={onClose}
+            >
+              Home
             </Link>
-            <Link href="/projects">
-              <a
-                className={`block py-2 px-4 font-medium rounded ${
-                  isActive("/projects")
-                    ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
-                    : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
-                }`}
-                onClick={onClose}
-              >
-                Projects
-              </a>
+            <Link 
+              href="/projects"
+              className={`block py-2 px-4 font-medium rounded ${
+                isActive("/projects")
+                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
+                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+              }`}
+              onClick={onClose}
+            >
+              Projects
             </Link>
-            <Link href="/blog">
-              <a
-                className={`block py-2 px-4 font-medium rounded ${
-                  isActive("/blog")
-                    ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
-                    : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
-                }`}
-                onClick={onClose}
-              >
-                Blog
-              </a>
+            <Link 
+              href="/blog"
+              className={`block py-2 px-4 font-medium rounded ${
+                isActive("/blog")
+                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
+                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+              }`}
+              onClick={onClose}
+            >
+              Blog
             </Link>
-            <Link href="/contact">
-              <a
-                className={`block py-2 px-4 font-medium rounded ${
-                  isActive("/contact")
-                    ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
-                    : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
-                }`}
-                onClick={onClose}
-              >
-                Contact
-              </a>
+            <Link 
+              href="/contact"
+              className={`block py-2 px-4 font-medium rounded ${
+                isActive("/contact")
+                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
+                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+              }`}
+              onClick={onClose}
+            >
+              Contact
             </Link>
           </div>
         </motion.div>

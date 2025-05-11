@@ -1,4 +1,4 @@
-import { useTheme } from "@/lib/theme";
+import { useTheme } from "../lib/theme.tsx";
 import { Sun, Moon } from "lucide-react";
 import { motion } from "framer-motion";
 

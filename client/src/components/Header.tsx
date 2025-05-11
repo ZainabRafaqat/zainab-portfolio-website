@@ -25,31 +25,23 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link href="/">
-            <a className="font-heading font-bold text-2xl text-primary dark:text-primary">ZR.</a>
+          <Link href="/" className="font-heading font-bold text-2xl text-primary dark:text-primary">
+            ZR.
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/">
-              <a className={`font-medium transition-colors ${isActive("/") ? "text-primary dark:text-primary" : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"}`}>
-                Home
-              </a>
+            <Link href="/" className={`font-medium transition-colors ${isActive("/") ? "text-primary dark:text-primary" : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"}`}>
+              Home
             </Link>
-            <Link href="/projects">
-              <a className={`font-medium transition-colors ${isActive("/projects") ? "text-primary dark:text-primary" : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"}`}>
-                Projects
-              </a>
+            <Link href="/projects" className={`font-medium transition-colors ${isActive("/projects") ? "text-primary dark:text-primary" : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"}`}>
+              Projects
             </Link>
-            <Link href="/blog">
-              <a className={`font-medium transition-colors ${isActive("/blog") ? "text-primary dark:text-primary" : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"}`}>
-                Blog
-              </a>
+            <Link href="/blog" className={`font-medium transition-colors ${isActive("/blog") ? "text-primary dark:text-primary" : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"}`}>
+              Blog
             </Link>
-            <Link href="/contact">
-              <a className={`font-medium transition-colors ${isActive("/contact") ? "text-primary dark:text-primary" : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"}`}>
-                Contact
-              </a>
+            <Link href="/contact" className={`font-medium transition-colors ${isActive("/contact") ? "text-primary dark:text-primary" : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"}`}>
+              Contact
             </Link>
           </nav>
 
