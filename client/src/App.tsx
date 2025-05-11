@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 // Pages
 import Home from "@/pages/Home";
 import Projects from "@/pages/Projects";
+import Experience from "./pages/Experience";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import Contact from "@/pages/Contact";
@@ -40,6 +41,7 @@ function App() {
                   <Switch>
                     <Route path="/" component={Home} />
                     <Route path="/projects" component={Projects} />
+                    <Route path="/experience" component={Experience} />
                     <Route path="/blog" component={Blog} />
                     <Route path="/blog/:slug" component={BlogPost} />
                     <Route path="/contact" component={Contact} />

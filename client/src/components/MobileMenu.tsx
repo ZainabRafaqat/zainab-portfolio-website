@@ -55,6 +55,17 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
               Projects
             </Link>
             <Link 
+              href="/experience"
+              className={`block py-2 px-4 font-medium rounded ${
+                isActive("/experience")
+                  ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary"
+                  : "text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
+              }`}
+              onClick={onClose}
+            >
+              Experience
+            </Link>
+            <Link 
               href="/blog"
               className={`block py-2 px-4 font-medium rounded ${
                 isActive("/blog")

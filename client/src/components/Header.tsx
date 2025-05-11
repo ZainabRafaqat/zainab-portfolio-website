@@ -37,6 +37,9 @@ const Header = () => {
             <Link href="/projects" className={`font-medium transition-colors ${isActive("/projects") ? "text-primary dark:text-primary" : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"}`}>
               Projects
             </Link>
+            <Link href="/experience" className={`font-medium transition-colors ${isActive("/experience") ? "text-primary dark:text-primary" : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"}`}>
+              Experience
+            </Link>
             <Link href="/blog" className={`font-medium transition-colors ${isActive("/blog") ? "text-primary dark:text-primary" : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"}`}>
               Blog
             </Link>
