@@ -14,78 +14,74 @@ interface ExperienceEntry {
   skills?: string[];
 }
 
-// Sample experience data - replace with your actual information
+// Experience data based on the provided resume
 const experienceData: ExperienceEntry[] = [
   {
     id: 1,
     type: "work",
-    title: "Frontend Engineer",
-    organization: "Current Company",
-    location: "City, Country",
-    period: "Jan 2023 - Present",
+    title: "Software Engineer",
+    organization: "Focusteck",
+    location: "Lahore, Pakistan",
+    period: "Jul 2023 - Present",
     description: [
-      "Led development of responsive, accessible interfaces using Next.js and TypeScript",
-      "Implemented state management solutions with Redux and Context API",
-      "Collaborated with designers to create pixel-perfect UI components",
-      "Improved application performance, achieving a 30% increase in load speed"
+      "Developed a tree growth tracking app using MapboxGL, React.js, and Firebase, enhancing geospatial accuracy by 30% through marker clustering algorithms",
+      "Contributed to a banking enterprise app, improving client management and streamlining financial reporting, reducing manual effort by 40%",
+      "Optimized financial reporting in the banking app, ensuring 100% data accuracy and improving processing speed by 3% through customized back-end solutions",
+      "Built a whitelabelable apartment booking platform using Next.js, allowing partner companies to deploy fully customized themes and integrate over 10 third-party APIs seamlessly",
+      "Automated dropshipping operations with Google Sheets API, creating dynamic workflows to track inventory, orders, and sales—increasing operational efficiency by 60% and minimizing errors"
     ],
-    skills: ["Next.js", "TypeScript", "React", "Redux", "Tailwind CSS"]
+    skills: ["React.js", "Next.js", "TypeScript", "MapboxGL", "Firebase", "Chart.js", "API Integration", "Google Sheets API"]
   },
   {
     id: 2,
     type: "work",
-    title: "Frontend Developer (Internship)",
-    organization: "Previous Company",
-    location: "City, Country",
-    period: "May 2022 - Dec 2022",
+    title: "Software Engineer Intern",
+    organization: "Exinia",
+    location: "Lahore, Pakistan",
+    period: "Jan 2023 - May 2023",
     description: [
-      "Developed and maintained React components for a SaaS application",
-      "Created user interfaces following Ant Design guidelines",
-      "Integrated RESTful APIs and implemented data visualization features",
-      "Participated in code reviews and agile development processes"
+      "Gained hands-on experience with Angular, working on component-based architecture, routing, and state management",
+      "Contributed to the development of a large-scale no-code platform, applying Angular's core functionalities to deliver a dynamic and user-friendly interface"
     ],
-    skills: ["React", "JavaScript", "Ant Design", "REST APIs"]
+    skills: ["Angular", "Component Architecture", "Routing", "State Management"]
   },
   {
     id: 3,
     type: "work",
-    title: "Web Development Intern",
-    organization: "First Company",
-    location: "City, Country",
-    period: "Jan 2022 - Apr 2022",
+    title: "Software Engineer Intern",
+    organization: "Techverx",
+    location: "Lahore, Pakistan",
+    period: "June 2022 - August 2022",
     description: [
-      "Assisted in building responsive web applications using modern JavaScript frameworks",
-      "Fixed UI bugs and implemented new features",
-      "Worked with senior developers to optimize website performance",
-      "Gained experience in version control and collaborative development"
+      "Acquired practical experience of React and associated libraries",
+      "Utilized Formik, Yup, Tailwind CSS, and Redux for efficient form validation, styling, and global state management"
     ],
-    skills: ["HTML", "CSS", "JavaScript", "Git"]
+    skills: ["React", "Formik", "Yup", "Tailwind CSS", "Redux"]
   },
   {
     id: 4,
     type: "education",
-    title: "Bachelor's in Computer Science",
-    organization: "University Name",
-    location: "City, Country",
-    period: "Sep 2018 - Jun 2022",
+    title: "Bachelor of Computer Science",
+    organization: "UET Lahore",
+    location: "Lahore, Pakistan",
+    period: "2019 - 2023",
     description: [
-      "Specialized in Web Development and UI/UX Design",
-      "Relevant coursework: Data Structures, Algorithms, Web Development, Human-Computer Interaction",
-      "Graduated with honors (GPA: 3.8/4.0)",
-      "Completed capstone project on interactive web applications"
+      "Developed strong foundations in computer science principles and programming",
+      "Completed projects including a recruitment platform with React and Django, a social networking app with Flutter and Firebase, and a blog website with React and Prismic CMS",
+      "Served as Chief Editor for 'Humans of UET', conducting interviews of people from diverse backgrounds",
+      "Active member of UET Debating Society as a Declamation Speaker"
     ]
   },
   {
     id: 5,
     type: "education",
-    title: "High School Diploma",
-    organization: "School Name",
-    location: "City, Country",
-    period: "Sep 2015 - Jun 2018",
+    title: "Pre-Engineering",
+    organization: "Kinnaird College for Women University",
+    location: "Lahore, Pakistan",
+    period: "2017 - 2019",
     description: [
-      "Focus on Mathematics and Computer Science",
-      "Participated in coding competitions and hackathons",
-      "Developed foundational skills in programming and problem-solving"
+      "Focused on mathematics and sciences, building a strong foundation for engineering studies",
+      "Developed analytical thinking and problem-solving skills"
     ]
   }
 ];

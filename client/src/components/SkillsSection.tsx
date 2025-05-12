@@ -49,21 +49,17 @@ const skills = [
   {
     category: "State Management & APIs",
     items: [
-      { name: "Redux", icon: <SiRedux className="h-8 w-8" /> },
-      { name: "Context API", icon: <FaReact className="h-8 w-8" /> },
+      { name: "Redux & Context API", icon: <SiRedux className="h-8 w-8" /> },
       { name: "GraphQL", icon: <SiGraphql className="h-8 w-8" /> },
       { name: "REST APIs", icon: <FaServer className="h-8 w-8" /> },
     ]
   },
   {
-    category: "Tools & Others",
+    category: "Tools",
     items: [
       { name: "Git", icon: <FaGitAlt className="h-8 w-8" /> },
-      { name: "Jest", icon: <SiJest className="h-8 w-8" /> },
       { name: "Figma", icon: <FaFigma className="h-8 w-8" /> },
-      { name: "Webpack", icon: <SiWebpack className="h-8 w-8" /> },
-      { name: "Node.js", icon: <FaNodeJs className="h-8 w-8" /> },
-      { name: "Databases", icon: <FaDatabase className="h-8 w-8" /> },
+      { name: "Cypress", icon: <SiJest className="h-8 w-8" /> },
     ]
   }
 ];
